@@ -1,4 +1,4 @@
-let apples = 5;
+let apples: number = 5;
 let speed: string = 'fast'
 let hasName: boolean = true;
 
@@ -31,5 +31,5 @@ const logNumber: ( i: number ) => void = ( i: number ) => {
 // When to use annotations
 // 1) Function that returns the 'any' type
 const json = '{"x": 10, "y": 20}';
-const coordinates = JSON.parse( json );
+const coordinates: { x: number; y: number } = JSON.parse( json ); // type annotation i.e. { x: number; y: number } used for type any
 console.log( coordinates ); // {x: 10, y: 20};
