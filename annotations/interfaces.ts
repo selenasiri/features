@@ -17,3 +17,5 @@ const printVehicle = ( vehicle: Vehicle ): void => {
 }
 
 printVehicle( oldCivic );
+
+// $ ts-node interfaces.ts
