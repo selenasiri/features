@@ -5,7 +5,7 @@ let hasName: boolean = true;
 let nothingMuch: null = null;
 let nothing: undefined = undefined;
 
-// Built in objects
+// Built in objects. 'Date' is a built in class
 let now: Date = new Date();
 
 // Array
