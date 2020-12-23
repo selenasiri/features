@@ -1,23 +1,16 @@
 class Vehicle { // Vehicle is the parent class
-  drive(): void {
-    console.log( 'chugga chugga' );
-  }
-
-  honk(): void {
+  public honk(): void {     // Class Method Modifiers: public and private
     console.log( 'beep' );
   }
 }
 
 class Car extends Vehicle { // copy & paste methods from Vehicle to class Car
-  drive(): void {
+  private drive(): void {   // private - used to restrict access to a function
     console.log( 'vroom' ); // redefines drive(); overrides the child class, returns 'vroom' instead of 'chugga chugga' 
   }
+
+  startDrivingProcess(): void {
+    this.drive();
+    this.honk();
+  }
 }
-
-const car = new Car();
-car.drive();
-car.honk(); // returns same output as below when we run $ts-node classes.ts
-
-// const vehicle = new Vehicle(); // classes named with a capital letter, instances with a lowercase letter
-// vehicle.drive();
-// vehicle.honk();
