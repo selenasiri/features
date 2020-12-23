@@ -1,8 +1,10 @@
 class Vehicle { // Vehicle is the parent class
-  public honk(): void {     // Class Method Modifiers: public and private
+  protected honk(): void {     // Class Method Modifiers: public and private
     console.log( 'beep' );
   }
 }
+
+const vehicle = new Vehicle();
 
 class Car extends Vehicle { // copy & paste methods from Vehicle to class Car
   private drive(): void {   // private - used to restrict access to a function
@@ -14,3 +16,7 @@ class Car extends Vehicle { // copy & paste methods from Vehicle to class Car
     this.honk();
   }
 }
+
+const car = new Car();
+car.startDrivingProcess();
+
