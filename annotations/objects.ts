@@ -14,3 +14,7 @@ const { age }: { age: number } = profile;
 const {
   coords: { lat, lng }
 }: { coords: { lat: number; lng: number } } = profile;
+
+// Destructuring with annotations && objects with annotations
+// 1. Destructure
+// 2. Apply annotations 
