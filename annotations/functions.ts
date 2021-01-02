@@ -1,4 +1,4 @@
-const add = ( a: number, b: number ): number => {   // the function will return a number 
+const add = ( a: number, b: number ): number => {   // Type annotation for functions 
   return a + b;
 };
 
