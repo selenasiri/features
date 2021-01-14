@@ -5,3 +5,4 @@ const drink = {
 };
 
 const pepsi: [string, boolean, number] = ['brown', true, 40];
+// Must be in the exact order as above
