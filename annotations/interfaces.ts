@@ -24,13 +24,10 @@ const drink2 = {
 };
 
 const printSummary = ( item: Reportable ): void => {
-  // ^Changed from 'printVehicle' and 'vehicle' since it won't include descriptions of the vehicle (name, year, broken)
   console.log( item.summary() )
-  // console.log( `Name: ${vehicle.name}` );
-  // console.log( `Year: ${vehicle.year}` );
-  // console.log( `Broken: ${vehicle.broken}` );
 }
 
 printSummary( oldCivic );
 printSummary( drink2 );
+
 // $ ts-node interfaces.ts
